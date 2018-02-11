@@ -1,22 +1,22 @@
 {
-  "name": "bpmn-editor",
+  "name": "bpmn-js-app",
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "body-parser": "^1.18.2",
     "bpmn-js": "^0.26.6",
     "express": "^4.16.2",
-    "fs": "0.0.1-security",
     "jquery": "^3.3.1",
     "mongodb": "^2.2.33",
-    "underscore": "^1.8.3",
-    "webpack": "^3.11.0"
+    "webpack": "^3.10.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.14.12"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "node index.js",
-    "webpack": "webpack ./init.js ./public/bundle.js"
+    "webpack": "webpack ./init.js ./public/bundle.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
