@@ -45,7 +45,7 @@ window.bpmnjs = viewer;*/
 
 
 
-var $ = require('jquery'),
+var $ = require('jquery');
 BpmnModeler = require('bpmn-js/lib/Modeler');
 
 var container = $('#js-drop-zone');
@@ -109,7 +109,8 @@ modeler.saveXML({ format: true }, function(err, xml) {
 done(err, xml);
 });
 }
-function saveDiagramToBD(done) {
+
+function saveDiagramToDB(done) {
 
 modeler.saveXML({ format: true }, function(err, xml) {
   done(err, xml);
@@ -179,14 +180,14 @@ console.log($("#js-export-diagram"));
 ////////////////////////////////////////////////SAVE TO DB
 
  
-  //   console.log('Fuck you');
+  
   // });
 //});
 });
 //$("#js-export-diagram").click(function(e){
 
 
-  // 
+  
 
 
 
@@ -211,7 +212,7 @@ if (data) {
 } else {
   link.removeClass('active');
 }
-}
+};
 ////ФУНКЦИИ ВЫГРУЗКИ ДИАГРАММ В БД ---НИЧЕГО НЕ МЕНЯТЬ ??SETENCODED
 var _ = require('lodash');
 
@@ -223,7 +224,7 @@ saveSVG(function(err, svg) {
 
 saveDiagram(function(err, xml) {
   setEncoded(downloadLink, 'diagram.bpmn', err ? null : xml);
-});
+
 
 //  saveDiagramToBD(function(err, xml) {
   

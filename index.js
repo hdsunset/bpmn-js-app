@@ -1,6 +1,6 @@
 const express = require('express');
 var app = express();
-
+const bodyParser     = require('body-parser');
 app.use(express.static('public'));
 
 var MongoClient = require('mongodb').MongoClient;
