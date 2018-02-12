@@ -1,22 +1,22 @@
 {
-  "name": "bpmn-js-app",
+  "name": "bpmn-editor",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "bpmn-js": "^0.26.6",
     "express": "^4.16.2",
+    "fs": "0.0.1-security",
     "jquery": "^3.3.1",
     "mongodb": "^2.2.33",
     "webpack": "^3.10.0"
   },
-  "devDependencies": {
-    "nodemon": "^1.14.12"
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "node index.js",
-    "webpack": "webpack ./init.js ./public/bundle.js",
-    "dev": "nodemon index.js"
+    "webpack": "webpack ./init.js ./public/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,5 @@
   "bugs": {
     "url": "https://github.com/hdsunset/bpmn-js-app/issues"
   },
-  "homepage": "https://github.com/hdsunset/bpmn-js-app#readme",
-  "description": ""
+  "homepage": "https://github.com/hdsunset/bpmn-js-app#readme"
 }
